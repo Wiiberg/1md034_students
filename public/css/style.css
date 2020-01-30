@@ -1,9 +1,13 @@
 @import url("reset.css");
 
-body {
+body{
+    margin: 0 auto;
     font-family: "Times New Roman", Times, serif;
     font-size: 16pt;
-					
+    text-align: center;
+}
+h1{
+    
 }
 .gluten{
     color: #ff5500;
@@ -11,7 +15,8 @@ body {
 }
 #lactose{
     /*font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
-    */text-transform: uppercase;
+     */
+    text-transform: uppercase;
     color: #55b200
 }
 #gluten{
@@ -28,4 +33,16 @@ body {
 button:hover{
     background-color: green;
     cursor: grab;   
+}
+table{
+    
+    margin: 0 auto;
+}
+
+.list{
+    text-align: left;
+}
+section{
+    margin: 0 auto;
+    margin-bottom: 40px;   
 }
