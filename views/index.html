@@ -8,7 +8,7 @@
   <main>
     <body>
       <h1> Welcome to BurgersOnline </h1>
-      <section>
+      <section id="burgers"> 
 	<h2> Select burger </h2>
 	<p> This is where you execute the burger selection </p>
 	<table>
@@ -30,21 +30,21 @@
 	 	<ul>
 		  <li> Tasty cheeseburger </li>
 		  <li> 700 calories </li>
-		  <li> Concerning gluten and lactose</li>
+		  <li> Concerning: <span class="gluten" id="gluten">("gluten and lactose")</li>
 		</ul>
 	      </td>
 	      <td>
 	 	<ul>
 		  <li> Tasty vegan burger </li>
 		  <li> 600 calories </li>
-		  <li> Gluten and lactose free</li>
+		  <li> Gluten and <span class="gluten" id="lactose">("lactose free")</li>
 		</ul>
 	      </td>
 	      <td>
 	 	<ul>
 		  <li> The perfect burger </li>
 		  <li> 1000 calories </li>
-		  <li> Concerning gluten and lactose</li>
+		  <li> Concerning: <span class="gluten" id="gluten">("gluten and lactose")</li>
 		</ul>
 	      </td>
 	      
@@ -53,7 +53,7 @@
 	  
 	</table>
       </section>
-      <section>
+      <section id="info">
 	<h2> Customer information </h2>
 	<p> This is where you provide necessary information </p>
       </section>

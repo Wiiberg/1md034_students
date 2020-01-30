@@ -2,11 +2,30 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    font-size: 20pt;
+    font-size: 16pt;
 					
 }
+.gluten{
+    color: #ff5500;
+    font-weight: bold;
+}
+#lactose{
+    /*font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
+    */text-transform: uppercase;
+    color: #55b200
+}
+#gluten{
+    /*font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
+    */text-transform: uppercase;
+}
+#burgers{
+    background-color: black;
+    color: white;
+}
+#info{
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+}
+button:hover{
+    background-color: green;
+    cursor: grab;   
 }
