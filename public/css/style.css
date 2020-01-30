@@ -7,8 +7,8 @@ body{
     text-align: center;
 }
 section{
-    margin: 30px 80px;
-    
+    margin: 8vh 10vw;
+      
 }
 
 .gluten{
@@ -28,9 +28,12 @@ section{
 #burgers{
     background-color: black;
     color: white;
+    border: 5px dashed;
+    
 }
 #info{
-
+    border: 5px dashed;
+        
 }
 button{
     margin-top: 50px;
