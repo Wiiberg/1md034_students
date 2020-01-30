@@ -6,9 +6,11 @@ body{
     font-size: 16pt;
     text-align: center;
 }
-h1{
+section{
+    margin: 30px 80px;
     
 }
+
 .gluten{
     color: #ff5500;
     font-weight: bold;
@@ -30,6 +32,9 @@ h1{
 #info{
 
 }
+button{
+    margin-top: 50px;
+}
 button:hover{
     background-color: green;
     cursor: grab;   
@@ -41,8 +46,4 @@ table{
 
 .list{
     text-align: left;
-}
-section{
-    margin: 0 auto;
-    margin-bottom: 40px;   
 }
