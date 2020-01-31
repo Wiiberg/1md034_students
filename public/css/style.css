@@ -15,15 +15,15 @@ section{
     max-width: 150%;
 }
 header{
-    margin: 8vh 10vw;
-    border: 5px dashed;   
+    margin: 4vh 10vw;
+    overflow: hidden;
 }
 h1{
+    margin-top: -18%;
     position: absolute;
-    right: 30%;
-    color: red;
-    font-size: 60pt;
-    
+    color: #eeeeee;
+    font-size: 70pt;
+    margin-left: 15%;
 }
 #pic{
     position: relative;
