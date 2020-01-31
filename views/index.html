@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">.
+   <link rel="stylesheet" type="text/css" href="../css/style.css">.
     <title>BurgersOnline</title>
     <meta charset="utf-8"/>
   </head>
   <main>
     <body>
-      <h1> Welcome to BurgersOnline </h1>
+      <header> 
+	<h1> Welcome to SkiBurgers </h1>
+      	<img src="https://pngimage.net/wp-content/uploads/2018/06/snowy-mountains-png-2.png" id="pic" alt="background" title="h1background">
+      </header>
       <section id="burgers"> 
 	<h2> Select burger </h2>
 	<p> This is where you execute the burger selection </p>
@@ -56,39 +59,39 @@
       <section id="info">
 	<h2> Customer information </h2>
 	<p> This is where you provide necessary information </p>
-      
-      <h2> Delivery information </h2>
-      <p>
-	<label for="name">Full name</label><br>
-	<input type="text" id="name" name="fn" required="required" placeholder="First- and lastname" />
-      </p>
-      <p>
-	<label for="email">Email</label><br>
-	<input type="email" id="email" name="em" required="required" placeholder="E-mail address" />
-      </p>
-      <p>
-	<label for="adress">Street</label><br>
-	<input type="text" id="adress" name="ad" required="required" placeholder="Street name" />
-      </p>
-      <p>
-	<label for="hnumber">House</label><br>
-	<input type="text" id="hnumber" name="hm" required="required" placeholder="House number" />
-      </p>
-      <p>
-	<label for="recipient">Payment method</label><br />
-	<select id="recipient" name="rcp">
-	  <option>Visa</option>
-          <option>MasterCard</option>
-          <option>AmericanExpress</option>
-          <option>Swish</option>
-        </select>
-      </p>
-      <form action="/action_page.php">
-	<p>Please select your gender:</p>
-	<input type="radio" name="gender" value="male"> Male<br>
-	<input type="radio" name="gender" value="female"> Female<br>
-	<input type="radio" name="gender" value="other" checked="checked"> Other<br>
-      </form>
+	
+	<h2> Delivery information </h2>
+	<p>
+	  <label for="name">Full name</label><br>
+	  <input type="text" id="name" name="fn" required="required" placeholder="First- and lastname" />
+	</p>
+	<p>
+	  <label for="email">Email</label><br>
+	  <input type="email" id="email" name="em" required="required" placeholder="E-mail address" />
+	</p>
+	<p>
+	  <label for="adress">Street</label><br>
+	  <input type="text" id="adress" name="ad" required="required" placeholder="Street name" />
+	</p>
+	<p>
+	  <label for="hnumber">House</label><br>
+	  <input type="text" id="hnumber" name="hm" required="required" placeholder="House number" />
+	</p>
+	<p>
+	  <label for="recipient">Payment method</label><br />
+	  <select id="recipient" name="rcp">
+	    <option>Visa</option>
+            <option>MasterCard</option>
+            <option>AmericanExpress</option>
+            <option>Swish</option>
+          </select>
+	</p>
+	<form action="/action_page.php">
+	  <p>Please select your gender:</p>
+	  <input type="radio" name="gender" value="male"> Male<br>
+	  <input type="radio" name="gender" value="female"> Female<br>
+	  <input type="radio" name="gender" value="other" checked="checked"> Other<br>
+	</form>
       </section>
       
       <button type="submit">Place My Order</button>

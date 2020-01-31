@@ -3,27 +3,44 @@
 body{
     margin: 0 auto;
     font-family: "Times New Roman", Times, serif;
-    font-size: 16pt;
+    font-size: 20pt;
     text-align: center;
 }
 section{
     margin: 8vh 10vw;
       
 }
-
+#id {
+    max-height: 100%;
+    max-width: 150%;
+}
+header{
+    margin: 8vh 10vw;
+    border: 5px dashed;   
+}
+h1{
+    position: absolute;
+    right: 30%;
+    color: red;
+    font-size: 60pt;
+    
+}
+#pic{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;  
+}
 .gluten{
     color: #ff5500;
     font-weight: bold;
 }
 #lactose{
-    /*font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
-     */
     text-transform: uppercase;
     color: #55b200
 }
 #gluten{
-    /*font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
-    */text-transform: uppercase;
+    text-transform: uppercase;
 }
 #burgers{
     background-color: black;
@@ -36,10 +53,14 @@ section{
         
 }
 button{
-    margin-top: 50px;
+    width: 20%;
+    height: 40%;
+    margin-bottom: 50px;
 }
 button:hover{
     background-color: green;
+    width: 20%;
+    height: 40%;
     cursor: grab;   
 }
 table{
