@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <link rel="stylesheet" type="text/css" href="../css/style.css">.
-    <title>BurgersOnline</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">.
+    <title>SkiBurgers</title>
     <meta charset="utf-8"/>
   </head>
   <main>
@@ -14,47 +14,29 @@
       <section id="burgers"> 
 	<h2> Select burger </h2>
 	<p> This is where you execute the burger selection </p>
-	<table>
-	  <thead>
-	    <tr>
-	      <th>  <h2> Fire Burger </h2> </th>
-	      <th>  <h2> Legend Burger </h2> </th>
-	      <th>  <h2> Epic Burger </h2> </th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    <tr class="pic">
-	      <td> <img src="https://www.mamoli.se/images/meny/hamburgare.png" alt="Riktigt fin burgare" title="burgare 1"> </td>
-	      <td> <img src="https://www.magnusjonasson.com/wp-content/2010/01/hamburger.png" id="pic2" alt="Bra burgare" title="burgare 2"> </td>
-	      <td> <img src="https://pngimage.net/wp-content/uploads/2018/06/mcfeast-png-8.png" alt="Perfekt burgare" title="burgare 3"> </td>
-	    </tr>
-	    <tr class="list">
-	      <td>
-	 	<ul>
-		  <li> Tasty cheeseburger </li>
-		  <li> 700 calories </li>
-		  <li> Concerning: <span class="gluten" id="gluten">("gluten and lactose")</li>
-		</ul>
-	      </td>
-	      <td>
-	 	<ul>
-		  <li> Tasty vegan burger </li>
-		  <li> 600 calories </li>
-		  <li> Gluten and <span class="gluten" id="lactose">("lactose free")</li>
-		</ul>
-	      </td>
-	      <td>
-	 	<ul>
-		  <li> The perfect burger </li>
-		  <li> 1000 calories </li>
-		  <li> Concerning: <span class="gluten" id="gluten">("gluten and lactose")</li>
-		</ul>
-	      </td>
-	      
-	    </tr>
-	  </tbody>
-	  
-	</table>
+	<div class="lable">
+	  <div class="A">
+	    <h2> Fire Burger </h2>
+	    <img class="img" src="https://www.mamoli.se/images/meny/hamburgare.png" alt="Riktigt fin burgare" title="burgare 1">
+	    <li> Tasty cheeseburger </li>
+	    <li> 700 calories </li>
+	    <li> Concerning: <span class="gluten" id="gluten">("gluten and lactose")</li>
+	  </div>
+	  <div class="B">
+	    <h2> Legend Burger </h2>
+	    <img class="img" src="https://www.magnusjonasson.com/wp-content/2010/01/hamburger.png" alt="pic2" title="burgare 2">
+	    <li> Tasty vegan burger </li>
+	    <li> 600 calories </li>
+	    <li> Gluten and <span class="gluten" id="lactose">("lactose free")</li>
+	    </div>
+	    <div class="C">
+	      <h2> Epic Burger </h2>
+	      <img class="img" src="https://pngimage.net/wp-content/uploads/2018/06/mcfeast-png-8.png" alt="Perfekt burgare" title="burgare 3">
+	      <li> The perfect burger </li>
+	      <li> 1000 calories </li>
+	      <li> Concerning: <span class="gluten" id="gluten">("gluten")</li>
+	    </div>
+	  </div>
       </section>
       <section id="info">
 	<h2> Customer information </h2>

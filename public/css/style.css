@@ -8,7 +8,7 @@ body{
 }
 section{
     margin: 8vh 10vw;
-      
+    
 }
 #id {
     max-height: 100%;
@@ -50,7 +50,7 @@ h1{
 }
 #info{
     border: 5px dashed;
-        
+    
 }
 button{
     width: 20%;
@@ -64,10 +64,48 @@ button:hover{
     cursor: grab;   
 }
 table{
-    
     margin: 0 auto;
 }
 
 .list{
     text-align: left;
+}
+
+.lable {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 400px 400px 400px;
+    margin-bottom: 20px;
+   
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+.box {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 100%;
+
+}
+
+.A {
+    grid-column: 1;
+}
+.B {
+    grid-column: 2;
+    
+}
+.C {
+    grid-column: 3;
+    
+}
+li{
+    position: relative;
+    margin-left: 30px;
+    text-align: left;
+    
 }
