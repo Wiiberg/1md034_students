@@ -1,4 +1,4 @@
-window.onload = function(){
+/*window.onload = function(){
 
 
     const vm = new Vue({
@@ -14,4 +14,4 @@ window.onload = function(){
    }
    
 })
-}
+}*/
