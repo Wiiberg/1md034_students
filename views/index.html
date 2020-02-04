@@ -19,15 +19,26 @@
 	  <h2> Select Burger</h2>
           <div class="lable">
 	    <div class="A" id="burgare1">
-
+	      <h2> {{titleburgare1}} </h2>
+	      <img class="img" v-bind:src="pic1">
+	      <ul>
+		<li v-for="item in info1"> {{item}}</li> 
+	      </ul>
 	    </div>
-
 	    <div class="B" id="burgare2">
-
+	      <h2> {{titleburgare2}} </h2>
+	      <img class="img" v-bind:src="pic2">
+	      <ul>
+		<li v-for="item2 in info2"> {{item2}}</li> 
+	      </ul>
 	    </div>
 
 	    <div class="C" id="burgare3">
-
+	      <h2> {{titleburgare3}} </h2>
+	      <img class="img" v-bind:src="pic3">
+	      <ul>
+		<li v-for="item3 in info3"> {{item3}}</li> 
+	      </ul>
 	    </div>
 	  </div>
           

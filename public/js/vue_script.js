@@ -1,17 +1,37 @@
-/*window.onload = function(){
+window.onload = function(){
 
 
     const vm = new Vue({
-	el: '#myID',
+	el: '#burgare1',
 	data: {
-	    item: item.info(),
-	    item2: item2.info(),
-	    item3: item3.info(),
-	    item4: item4.info(),
-	    item5: item5.info()
-    
-    
-   }
+	    titleburgare1: "FireBurger",
+	    pic1: "https://www.mamoli.se/images/meny/hamburgare.png",
+	    info1: ["700 kCal", "Tasty cheeseburger" ,"Gluten och lactose"] 
+	    
+	     
+	}
    
-})
-}*/
+    })
+    const vm1 = new Vue({
+	el: '#burgare2',
+	data: {
+	    titleburgare2: "Legend Burger",
+	    pic2: "https://www.mamoli.se/images/meny/hamburgare.png",
+	    info2: ["600 kCal", "Tasty Vegan Burger" ,"Gluten"] 
+	    
+	     
+	}
+   
+     })
+    const vm3 = new Vue({
+	el: '#burgare3',
+	data: {
+	    titleburgare3: "Epic Burger",
+	    pic3: "https://www.mamoli.se/images/meny/hamburgare.png",
+	    info3: ["1000 kCal", "The best burger" ,"Lactose"] 
+	    
+	     
+	}
+   
+     })
+}
