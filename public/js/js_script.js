@@ -77,3 +77,17 @@ for (var i = 0 ; i < info2.length; i++)
 }
 
 */
+/*
+let myButton = document.getElementById('myButtonID');
+
+myButton.onclick = function () {
+    console.log("Button Clicked");
+    console.log(document.getElementById("name").value);
+    console.log(document.getElementById("email").value);
+    console.log(document.getElementById("adress").value);
+    console.log(document.getElementById("hnumber").value);
+    console.log(document.getElementById("recipient").value);
+    let array = [document.getElementById("name").value, document.getElementById("email").value, document.getElementById("hnumber").value, document.getElementById("hnumber").value , document.getElementById("recipient").value];
+console.log(array);
+}
+*/

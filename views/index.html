@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">.
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
-    <script type="text/javascript" src="js/menu.js" ></script>
     <script src="https://vuejs.org/js/vue.js" defer></script> 
+    <script type="text/javascript" src="js/menu.js"></script>
     <title>SkiBurgers</title>
     <meta charset="utf-8"/>
   </head>
-  <main>
+  <main id="main">
     <body>
       <header> 
       	<img src="https://pngimage.net/wp-content/uploads/2018/06/snowy-mountains-png-2.png" id="pic" alt="background" title="h1background">
@@ -18,13 +18,17 @@
       <section id="burgers"> 
 	<div id="myID">
 	  <h2> Select Burger</h2>
-          <div class="lable">
+          <div class="lable" id="lable">
 	    <div class="A" id="burgare1">
 	      <h2> {{titleburgare1}} </h2>
 	      <img class="img" v-bind:src="pic1">
 	      <ul>
 		<li v-for="item in info1"> {{item}}</li> 
 	      </ul>
+	      <div id="checkbox">
+	      <input type="checkbox" id="checkbox1" value="Cheese">
+	      <label for="checkbox1"> Klick to order</label>
+	      </div>
 	    </div>
 	    <div class="B" id="burgare2">
 	      <h2> {{titleburgare2}} </h2>
@@ -32,6 +36,10 @@
 	      <ul>
 		<li v-for="item2 in info2"> {{item2}}</li> 
 	      </ul>
+	      <input type="checkbox" id="checkbox2" value="Cheese">
+	      <label for="checkbox2"> Klick to order</label>
+	    
+	     	
 	    </div>
 
 	    <div class="C" id="burgare3">
@@ -40,35 +48,16 @@
 	      <ul>
 		<li v-for="item3 in info3"> {{item3}}</li> 
 	      </ul>
+	      <input type="checkbox" id="checkbox3" value="Cheese">
+	      <label for="checkbox3"> Klick to order</label>
+	    
 	    </div>
 	  </div>
           
           
 	</div>  
 
-	<!--div class="lable">
-	  <div class="A">
-	    <h2> Fire Burger </h2>
-	    <img class="img" src="https://www.mamoli.se/images/meny/hamburgare.png" alt="Riktigt fin burgare" title="burgare 1">
-	    <li> Tasty cheeseburger </li>
-	    <li> 700 calories </li>
-	    <li> Concerning: <span class="gluten" id="gluten2">("gluten and lactose") </span></li>
-	  </div>
-	  <div class="B">
-	    <h2> Legend Burger </h2>
-	    <img class="img" src="https://www.magnusjonasson.com/wp-content/2010/01/hamburger.png" alt="pic2" title="burgare 2">
-	    <li> Tasty vegan burger </li>
-	    <li> 600 calories </li>
-	    <li> Gluten and <span class="gluten" id="lactose">("lactose free")</span></li>
-	  </div>
-	  <div class="C">
-	    <h2> Epic Burger </h2>
-	    <img class="img" src="https://www.magnusjonasson.com/wp-content/2010/01/hamburger.png" alt="Perfekt burgare" title="burgare 3">
-	    <li> The perfect burger </li>
-	    <li> 1000 calories </li>
-	    <li> Concerning: <span class="gluten" id="gluten1">("gluten")</span></li>
-	  </div>
-	</div!-->
+
       </section>
       <section id="info">
 	<h2> Customer information </h2>
@@ -77,19 +66,19 @@
 	<h2> Delivery information </h2>
 	<p>
 	  <label for="name">Full name</label><br>
-	  <input type="text" id="name" name="fn" required="required" placeholder="First- and lastname" />
+	  <input v-model="name" type="text" id="name" name="fn" required="required" placeholder="First- and lastname" />
 	</p>
 	<p>
 	  <label for="email">Email</label><br>
-	  <input type="email" id="email" name="em" required="required" placeholder="E-mail address" />
+	  <input v-model="email" type="email" id="email" name="em" required="required" placeholder="E-mail address" />
 	</p>
 	<p>
 	  <label for="adress">Street</label><br>
-	  <input type="text" id="adress" name="ad" required="required" placeholder="Street name" />
+	  <input v-model="adress" type="text" id="adress" name="ad" required="required" placeholder="Street name" />
 	</p>
 	<p>
 	  <label for="hnumber">House</label><br>
-	  <input type="text" id="hnumber" name="hm" required="required" placeholder="House number" />
+	  <input v-model="hnumber" type="text" id="hnumber" name="hm" required="required" placeholder="House number" />
 	</p>
 	<p>
 	  <label for="recipient">Payment method</label><br />
@@ -101,14 +90,29 @@
           </select>
 	</p>
 	<form action="/action_page.php">
+	  <div id="gender">
 	  <p>Please select your gender:</p>
-	  <input type="radio" name="gender" value="male"> Male<br>
-	  <input type="radio" name="gender" value="female"> Female<br>
-	  <input type="radio" name="gender" value="other" checked="checked"> Other<br>
+	  
+	  <input type="radio" name="gender" value="male" v-model="Gender"> Male<br>
+	  <input type="radio" name="gender" value="female" v-model="Gender"> Female<br>
+	  <input type="radio" name="gender" value="other"  v-model="Gender" checked="checked"> Other<br>
+	  </div>
 	</form>
       </section>
-      
-      <button type="submit">Place My Order</button>
+      <div id="orders">
+	<button v-on:click="markDone();"> Checkout </button>
+      	<p>  {{ name }} </p>
+	<p>  {{ email }} </p>
+	<p>  {{ adress }} </p>
+	<p>  {{ hnumber }} </p>
+	<p>  {{ Gender }} </p>
+	<p>  {{ recipient }} </p>
+	<p>  {{ Burger1 }} </p>
+	<p>  {{ Burger2 }} </p>
+	<p>  {{ Burger3 }} </p>
+	
+
+      </div>	
       <footer>
 
       </footer>

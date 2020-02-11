@@ -1,25 +1,25 @@
 let food = [
     {
-	"name": "Ostburgare",
+	"name": "Cheeseburgare",
 	"kCal": 850,
-	"lactose": true,
-	"gluten": false,
+	"lactose": "Lactose free",
+	"gluten": "Gluten",
 	"img": "https://www.mamoli.se/images/meny/hamburgare.png"
     }
     ,
     {
 	"name": "Veganburger",
 	"kCal": 600,
-	"lactose": true,
-	"gluten": false,
+	"lactose": "Lactose",
+	"gluten": "Gluten free",
 	"img": "https://www.mamoli.se/images/meny/hamburgare.png"
     }
     ,
     {
 	"name": "Epicburger",
 	"kCal": 1000,
-	"lactose": true,
-	"gluten": false,
+	"lactose": "Lactose free",
+	"gluten": "Gluten free",
 	"img": "https://www.mamoli.se/images/meny/hamburgare.png"
 
     }
