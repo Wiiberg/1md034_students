@@ -94,17 +94,15 @@
 	  <h2 id="h1map"> Click in the map! </h2>
 	  <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
 	  <div class="view-box">
-	    <div id="dots" v-on:click="addOrder">
-	      <div 
-		v-for="(order, key) in orders"
-		v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
-		{{key}}
+	    <div id="dots" v-on:click="displayOrder">
+	      <div v-bind:style="{ left: details.x + 'px', top: details.y + 'px'}">
+		{{"T"}}
               </div>
 	    </div>
 	  </div>
       </section>
       <div id="orders">
-	<button v-on:click="markDone();"> Checkout </button>
+	<button v-on:click="markDone(); addOrder() "> Checkout </button>
       	<p>  {{ name }} </p>
 	<p>  {{ email }} </p>
 	<p>  {{ Gender }} </p>
