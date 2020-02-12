@@ -103,10 +103,13 @@
       </section>
       <div id="orders">
 	<button v-on:click="markDone(); addOrder() "> Checkout </button>
-      	<p>  {{ name }} </p>
-	<p>  {{ email }} </p>
-	<p>  {{ Gender }} </p>
-	<p>  {{ recipient }} </p>
+	<h2> Order confirmation </h2>
+	<h3> Customer-details </h3>
+	<p>Name:  {{ name }} </p>
+	<p>Email:  {{ email }} </p>
+	<p>Gender:  {{ Gender }} </p>
+	<p>Paymentmethod:  {{ recipient }} </p>
+	<h3> Order summary </h3>
 	<p>  {{ Burger1 }} </p>
 	<p>  {{ Burger2 }} </p>
 	<p>  {{ Burger3 }} </p>

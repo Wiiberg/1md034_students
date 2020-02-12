@@ -48,11 +48,13 @@ window.onload = function(){
 	    name: '' ,
 	    email: '' ,
 	    recipient: '',
+	    adress: '',
 	    Gender: '',
 	    Burger1: '' ,
 	    Burger2: '' ,
 	    Burger3: '' ,
 	    counter: 0,
+	    customerInfo: [],
 	    
 	    
 	} ,
@@ -108,6 +110,8 @@ window.onload = function(){
 			y: vm7.details.y,
 		    },
 		    orderItems: [vm4.Burger1 + " " + vm4.Burger2 + " " + vm4.Burger3 ],
+		    customerInfo: [vm4.name , vm4.email, vm4.Gender ],
+		    
 		});
 	    },
 	    
