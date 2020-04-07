@@ -12,58 +12,39 @@
   </head>
   <main id="main">
     <body>
-      <header> 
+      <header>
       	<img src="https://pngimage.net/wp-content/uploads/2018/06/snowy-mountains-png-2.png" id="pic" alt="background" title="h1background">
 	<h1> Welcome to SkiBurgers </h1>
       </header>
-      <section id="burgers"> 
+      <section id="burgers">
 	<div id="myID">
 	  <h2> Select Burger</h2>
-          <div class="lable" id="lable">
-	    <div class="A" id="burgare1">
-	      <h2> {{titleburgare1}} </h2>
-	      <img class="img" v-bind:src="pic1">
-	      <ul>
-		<li v-for="item in info1"> {{item}}</li> 
-	      </ul>
+    <div class="lable" id="lable">
+      <div v-for="burger in menu">
+           <div class="A" id="burger.id">
+	              <h2> {{burger.id}} </h2>
+	               <img class="img" v-bind:src="burger.img">
+	                <ul>
+		              <li v-for="item in burger.ingrediens"> {{item}}</li>
+	               </ul>
 	      <div id="checkbox">
-	      <input type="checkbox" id="checkbox1" value="Cheese">
-	      <label for="checkbox1"> Klick to order</label>
+	      <input type="checkbox" v-bind:id="burger.id">
+	      <label for="burger.id"> Klick to order</label>
 	      </div>
 	    </div>
-	    <div class="B" id="burgare2">
-	      <h2> {{titleburgare2}} </h2>
-	      <img class="img" v-bind:src="pic2">
-	      <ul>
-		<li v-for="item2 in info2"> {{item2}}</li> 
-	      </ul>
-	      <input type="checkbox" id="checkbox2" value="Cheese">
-	      <label for="checkbox2"> Klick to order</label>
-	    
-	     	
-	    </div>
 
-	    <div class="C" id="burgare3">
-	      <h2> {{titleburgare3}} </h2>
-	      <img class="img" v-bind:src="pic3">
-	      <ul>
-		<li v-for="item3 in info3"> {{item3}}</li> 
-	      </ul>
-	      <input type="checkbox" id="checkbox3" value="Cheese">
-	      <label for="checkbox3"> Klick to order</label>
-	    
-	    </div>
 	  </div>
-          
-          
-	</div>  
+
+   </div>
+
+	</div>
 
 
       </section>
       <section id="info">
 	<h2> Customer information </h2>
 	<p> This is where you provide necessary information </p>
-	
+
 	<h2> Delivery information </h2>
 	<p>
 	  <label for="name">Full name</label><br>
@@ -85,7 +66,7 @@
 	<form action="/action_page.php">
 	  <div id="gender">
 	  <p>Please select your gender:</p>
-	  
+
 	  <input type="radio" name="gender" value="male" v-model="Gender"> Male<br>
 	  <input type="radio" name="gender" value="female" v-model="Gender"> Female<br>
 	  <input type="radio" name="gender" value="other"  v-model="Gender" checked="checked"> Other<br>
@@ -110,16 +91,12 @@
 	<p>Gender:  {{ Gender }} </p>
 	<p>Paymentmethod:  {{ recipient }} </p>
 	<h3> Order summary </h3>
-	<p>  {{ Burger1 }} </p>
-	<p>  {{ Burger2 }} </p>
-	<p>  {{ Burger3 }} </p>
-	
 
-      </div>	
+
+      </div>
       <footer>
 
       </footer>
     </body>
   </main>
 </html>
-
